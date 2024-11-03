@@ -26,7 +26,7 @@ public:
 		pet->setPosition(CCDirector::get()->getWinSize() / div);
 
 		pet->setScale(this->sizeMult);
-		this->sizeMult += 0.05f;
+		this->sizeMult += 0.005f;
 
 		this->addChild(pet, 100);
 		return pet;
@@ -39,7 +39,7 @@ public:
 			auto pet = dynamic_cast<Pet*>(child);
 			if (pet) {
 				pet->setScale(this->sizeMult);
-				this->sizeMult += 0.05f;
+				this->sizeMult += 0.005f;
 			}
 		}
 	}
